@@ -40,12 +40,6 @@ import org.json.simple.parser.JSONParser;
 public class FishChecker extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
-        if (!this.getServer().getOnlineMode()) {
-            this.getLogger()
-                    .info(": We're sorry but fishchecker will not function correctly in offline mode.");
-            this.setEnabled(false);
-            return;
-        }
         this.getServer().getPluginManager().registerEvents(this, this);
     }
 
